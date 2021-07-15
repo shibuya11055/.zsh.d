@@ -26,6 +26,8 @@ alias ga='git add'
 alias gcm='git commit -m'
 alias gcmfix='git commit --amend -m'
 alias gcr='git reset --soft HEAD^'
+alias gma='git merge --abort'
+
 # push
 alias gpu='git push -u origin HEAD'
 alias gpo='git push origin HEAD'
