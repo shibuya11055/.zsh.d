@@ -73,3 +73,19 @@ alias yi='yarn install'
 alias dcps='docker-compose ps'
 alias dcup='docker-compose up -d'
 alias dcdown='docker-compose down'
+
+# sound
+# !brew install switchaudio-osx!
+function sci() {
+    SwitchAudioSource -s 外部ヘッドフォン;
+    SwitchAudioSource -t input -s 外部マイク;
+}
+
+function scb() {
+    SwitchAudioSource -s 'SOUNDPEATS TrueAir2';
+    SwitchAudioSource -t input -s 'SOUNDPEATS TrueAir2';
+}
+
+alias sci='sci'
+alias scb='scb'
+
